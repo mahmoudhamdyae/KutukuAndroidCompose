@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.mahmoudhamdyae.kutuku.ui.theme.playFairSansFamily
 
 @Composable
 fun TopSection(onSkipClick: () -> Unit) {
@@ -25,7 +26,11 @@ fun TopSection(onSkipClick: () -> Unit) {
             contentPadding = PaddingValues(0.dp),
             modifier = Modifier.align(Alignment.CenterEnd)
         ) {
-            Text(text = "Skip", color = MaterialTheme.colorScheme.primary)
+            Text(
+                text = "Skip",
+                color = MaterialTheme.colorScheme.primary,
+                fontFamily = playFairSansFamily,
+                )
         }
     }
 }

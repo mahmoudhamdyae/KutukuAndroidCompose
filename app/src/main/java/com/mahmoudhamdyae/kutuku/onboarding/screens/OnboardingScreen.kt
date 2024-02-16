@@ -2,7 +2,6 @@ package com.mahmoudhamdyae.kutuku.onboarding.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.pager.HorizontalPager
@@ -48,7 +47,11 @@ fun OnboardingScreen(
             OnboardingItem(item = items[page])
         }
 
-        BottomSection(size = items.size, index = pageState.currentPage) {
+        BottomSection(
+            size = items.size,
+            index = pageState.currentPage,
+            isInLast = pageState.currentPage == OnboardingItem.getData().size - 1,
+        ) {
             if (pageState.currentPage + 1 < items.size) {
                 scope.launch { pageState.animateScrollToPage(pageState.currentPage + 1) }
             } else {

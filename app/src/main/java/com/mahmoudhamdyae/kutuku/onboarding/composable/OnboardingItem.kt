@@ -4,7 +4,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -23,6 +22,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mahmoudhamdyae.kutuku.onboarding.models.OnboardingItem
+import com.mahmoudhamdyae.kutuku.ui.theme.playFairSansFamily
 
 @Composable
 fun OnboardingItem(item: OnboardingItem) {
@@ -49,7 +49,9 @@ fun OnboardingItem(item: OnboardingItem) {
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
             letterSpacing = 1.sp,
+            fontFamily = playFairSansFamily,
         )
+
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
@@ -60,6 +62,7 @@ fun OnboardingItem(item: OnboardingItem) {
             textAlign = TextAlign.Center,
             modifier = Modifier.padding(10.dp),
             letterSpacing = 1.sp,
+            fontFamily = playFairSansFamily,
         )
     }
 }

@@ -19,9 +19,15 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.mahmoudhamdyae.kutuku.R
+import com.mahmoudhamdyae.kutuku.ui.theme.playFairSansFamily
 
 @Composable
-fun BottomSection(size: Int, index: Int, onButtonClick: () -> Unit) {
+fun BottomSection(
+    size: Int,
+    index: Int,
+    isInLast: Boolean,
+    onButtonClick: () -> Unit
+) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -48,7 +54,10 @@ fun BottomSection(size: Int, index: Int, onButtonClick: () -> Unit) {
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(15.dp, 15.dp, 15.dp, 15.dp))
         ) {
-            Text(stringResource(id = R.string.next))
+            Text(
+                stringResource(id = if (isInLast) R.string.get_started else R.string.next),
+                fontFamily = playFairSansFamily,
+                )
         }
     }
 }
