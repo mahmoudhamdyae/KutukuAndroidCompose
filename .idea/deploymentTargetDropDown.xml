@@ -2,7 +2,16 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="OnboardingScreenTest">
+        <State />
+      </entry>
       <entry key="app">
+        <State />
+      </entry>
+      <entry key="clickNextButton_validateItems()">
+        <State />
+      </entry>
+      <entry key="clickSkipButton_navigateToLoginScreen()">
         <State />
       </entry>
     </value>
