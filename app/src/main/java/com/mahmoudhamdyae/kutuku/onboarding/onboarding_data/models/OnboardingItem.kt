@@ -1,4 +1,4 @@
-package com.mahmoudhamdyae.kutuku.onboarding.models
+package com.mahmoudhamdyae.kutuku.onboarding.onboarding_data.models
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

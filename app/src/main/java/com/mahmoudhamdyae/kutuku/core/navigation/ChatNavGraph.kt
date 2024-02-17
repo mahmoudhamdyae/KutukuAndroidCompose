@@ -7,8 +7,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.mahmoudhamdyae.kutuku.auth.screen.LoginDestination
 import com.mahmoudhamdyae.kutuku.auth.screen.LoginScreen
-import com.mahmoudhamdyae.kutuku.onboarding.screens.OnboardingDestination
-import com.mahmoudhamdyae.kutuku.onboarding.screens.OnboardingScreen
+import com.mahmoudhamdyae.kutuku.onboarding.onboarding_presentation.screens.OnboardingDestination
+import com.mahmoudhamdyae.kutuku.onboarding.onboarding_presentation.screens.OnboardingScreen
 
 /**
  * Provides Navigation graph for the application.

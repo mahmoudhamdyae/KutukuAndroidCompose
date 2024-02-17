@@ -1,4 +1,4 @@
-package com.mahmoudhamdyae.kutuku.onboarding.composable
+package com.mahmoudhamdyae.kutuku.onboarding.onboarding_presentation.composable
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -21,7 +21,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mahmoudhamdyae.kutuku.onboarding.models.OnboardingItem
+import com.mahmoudhamdyae.kutuku.onboarding.onboarding_data.models.OnboardingItem
 import com.mahmoudhamdyae.kutuku.ui.theme.playFairSansFamily
 
 @Composable

@@ -1,4 +1,4 @@
-package com.mahmoudhamdyae.kutuku.onboarding.screens
+package com.mahmoudhamdyae.kutuku.onboarding.onboarding_presentation.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Column
@@ -13,10 +13,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.mahmoudhamdyae.kutuku.R
 import com.mahmoudhamdyae.kutuku.auth.screen.LoginDestination
 import com.mahmoudhamdyae.kutuku.core.navigation.NavigationDestination
-import com.mahmoudhamdyae.kutuku.onboarding.composable.BottomSection
-import com.mahmoudhamdyae.kutuku.onboarding.composable.OnboardingItem
-import com.mahmoudhamdyae.kutuku.onboarding.composable.TopSection
-import com.mahmoudhamdyae.kutuku.onboarding.models.OnboardingItem
+import com.mahmoudhamdyae.kutuku.onboarding.onboarding_presentation.composable.BottomSection
+import com.mahmoudhamdyae.kutuku.onboarding.onboarding_presentation.composable.OnboardingItem
+import com.mahmoudhamdyae.kutuku.onboarding.onboarding_presentation.composable.TopSection
+import com.mahmoudhamdyae.kutuku.onboarding.onboarding_data.models.OnboardingItem
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 
 object OnboardingDestination: NavigationDestination {

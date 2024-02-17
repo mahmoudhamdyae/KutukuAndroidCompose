@@ -1,4 +1,4 @@
-package com.mahmoudhamdyae.kutuku.onboarding.composable
+package com.mahmoudhamdyae.kutuku.onboarding.onboarding_presentation.composable
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateDpAsState
